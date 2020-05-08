@@ -1,0 +1,34 @@
+{
+  "name": "rick-and-morty-characters",
+  "version": "1.0.0",
+  "description": "This database of characters from Rick and Morty was created using next.js for self-development.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramil-fatykhov/rick-and-morty-characters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramil-fatykhov/rick-and-morty-characters/issues"
+  },
+  "homepage": "https://github.com/ramil-fatykhov/rick-and-morty-characters#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.3.2",
+    "postcss-loader": "^3.0.0",
+    "qs": "^6.9.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.1.0"
+  }
+}
