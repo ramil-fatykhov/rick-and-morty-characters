@@ -4,9 +4,9 @@ export const getEpisodes = (episode) => {
   return new Promise((resolve, reject) => {
     axiosAction({
       method: 'GET',
-      url: `/character/episode/${episode}`,
+      url: `/episode/${episode}`,
     }).then(result => {
-      resolve(result);
+      resolve(result.data);
     }).catch(err => {
       reject(err);
   });
