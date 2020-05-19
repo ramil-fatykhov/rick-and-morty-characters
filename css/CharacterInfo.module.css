@@ -1,6 +1,6 @@
 .mainContainer {
   border-radius: 15px;
-  background: #c5cdd1;
+  background: #e8e8e8;
 }
 
 .container {
@@ -10,14 +10,20 @@
 .infoContainer {
   font-size: 24px;
   padding: 0 10px 0 10px;
-  color: #fff;
 }
 
 .image {
   border-radius: 15px;
-  padding: 10px;
+  padding: 22px;
 }
 
 .episodes {
   display: block;
+}
+
+.episodeTitle {
+  font-size: 46px;
+  padding-left: 22px;
+  margin: 0;
+  font-weight: bold;
 }

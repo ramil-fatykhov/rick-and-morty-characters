@@ -19,22 +19,21 @@ export default class CharacterInfo extends React.Component {
   };
 
   componentDidMount() {
+    const { episodes } = this.state;
     getCharacter(this.parseURL()).then((res) => {
       const character = res.data;
-      console.log('111111111111111', character);
       const idArr = [];
       character.episode.forEach(element => {
         idArr.push(element.substring(element.lastIndexOf('/') + 1))
       });
       getEpisodes(idArr).then((res) => {
-        this.setState({ character, episodes: res });
+        this.setState({ character, episodes: Array.isArray(res) ? res : [res] });
       });
     });
   }
 
   render() {
     const { character, episodes } = this.state;
-    console.log(episodes);
     return (
       <div className={styles.mainContainer}>
         <div className={styles.container}>
@@ -54,6 +53,7 @@ export default class CharacterInfo extends React.Component {
         </div>
 
         <div className={styles.episodes}>
+          <p className={styles.episodeTitle}>Episodes</p>
           {episodes && episodes.map((item) => <Episodeitem key={item.id} episode={item}/>)}
         </div>
       </div>
