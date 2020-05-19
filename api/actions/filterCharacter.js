@@ -1,10 +1,10 @@
 import axiosAction from '../axiosClient';
 
-export const getCharacters = (url) => {
+export const filterCharacter = (filter) => {
   return new Promise((resolve, reject) => {
     axiosAction({
       method: 'GET',
-      url: `/character/${url}`,
+      url: `/character/${filter}`,
     }).then(result => {
       resolve(result);
     }).catch(err => {
