@@ -1,6 +1,6 @@
 import { getCharacters } from '../api/actions/getCharacters';
 import { filterCharacter } from '../api/actions/filterCharacter';
-import styles from '../css/Index.module.css'
+import styles from '../css/index.module.css'
 import { CharacterItem } from '../components/Character'
 
 export default class Index extends React.Component {
@@ -84,7 +84,7 @@ export default class Index extends React.Component {
           </div>
         </form>
         {this.state.characters.map((item) => <CharacterItem key={item.id} character={item}/>)}
-        {this.state.currPage != 25 && <div className={styles.buttonContainer}><button className={styles.loadMoreButton} onClick={this.changeCurrentPage}>Load More</button></div>}
+        {this.state.currPage != 25 && <div className={styles.load_more_button__container}><button className={styles.load_more_button} onClick={this.changeCurrentPage}>Load More</button></div>}
       </div>
     )
   }

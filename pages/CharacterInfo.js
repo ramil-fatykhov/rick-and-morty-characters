@@ -1,6 +1,6 @@
 import { getCharacter } from "../api/actions/getCharacter";
 import { render } from "react-dom";
-import styles from "../css/CharacterInfo.module.css";
+import styles from "../css/character_info.module.css";
 import { Episodeitem } from "../components/Episode";
 import { getEpisodes } from "../api/actions/getEpisodes";
 
@@ -35,14 +35,14 @@ export default class CharacterInfo extends React.Component {
   render() {
     const { character, episodes } = this.state;
     return (
-      <div className={styles.mainContainer}>
-        <div className={styles.container}>
+      <div className={styles.character_info__main_container}>
+        <div className={styles.character_info__container}>
           <img
             src={character.image}
             alt={character.name}
-            className={styles.image}
+            className={styles.character_info__image}
           />
-          <div className={styles.infoContainer}>
+          <div className={styles.character_info__info_container}>
             <p>{character.name}</p>
             <p>Gender: {character.gender}</p>
             <p>Species: {character.species}</p>
@@ -52,8 +52,8 @@ export default class CharacterInfo extends React.Component {
           </div>
         </div>
 
-        <div className={styles.episodes}>
-          <p className={styles.episodeTitle}>Episodes</p>
+        <div className={styles.character_info__episodes}>
+          <p className={styles.character_info__episode_title}>Episodes</p>
           {episodes && episodes.map((item) => <Episodeitem key={item.id} episode={item}/>)}
         </div>
       </div>

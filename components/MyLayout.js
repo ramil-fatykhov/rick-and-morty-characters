@@ -1,4 +1,4 @@
-const layoutStyle = {
+const layout = {
   margin: 20,
   padding: 20,
   border: '1px solid #DDD'
@@ -6,7 +6,7 @@ const layoutStyle = {
 
 export default function Layout(props) {
   return (
-    <div style={layoutStyle}>
+    <div style={layout}>
       {props.children}
     </div>
   )

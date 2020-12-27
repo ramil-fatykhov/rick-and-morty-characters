@@ -1,4 +1,4 @@
-.loadMoreButton {
+.load_more_button {
 	background-color: white;
   color: black;
   border: 2px solid #4CAF50;
@@ -11,11 +11,11 @@
 	transition-duration: 0.4s;
 }
 
-.loadMoreButton:hover {
+.load_more_button:hover {
   background-color: #4CAF50;
   color: white;
 }
 
-.buttonContainer {
+.load_more_button__container {
 	text-align: center;
 }

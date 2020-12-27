@@ -1,4 +1,4 @@
-.card {
+.episode__card {
   display: inline-block;
   width: 300px;
   padding: 1em;
@@ -9,13 +9,13 @@
   text-align: left;
 }
 
-.caption {
+.episode__caption {
   background: #fff;
   opacity: 0.65;
   border-radius: 0 0 3px 3px;
 }
 
-.text {
+.episode__text {
   margin: 0;
   padding-left: 5px;
   font-size: 22px;
@@ -27,12 +27,12 @@
   white-space: nowrap;
 }
 
-.tooltip {
+.episode__tooltip {
   position: relative;
   display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.episode__tooltip .episode__tooltiptext {
   visibility: hidden;
   background-color: black;
   color: #fff;
@@ -49,6 +49,6 @@
   z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.episode__tooltip:hover .episode__tooltiptext {
   visibility: visible;
 }

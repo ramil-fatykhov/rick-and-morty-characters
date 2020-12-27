@@ -1,27 +1,27 @@
-.mainContainer {
+.character_info__main_container {
   border-radius: 15px;
   background: #e8e8e8;
 }
 
-.container {
+.character_info__container {
   display: inline-flex;
 }
 
-.infoContainer {
+.character_info__info_container {
   font-size: 24px;
   padding: 0 10px 0 10px;
 }
 
-.image {
+.character_info__image {
   border-radius: 15px;
   padding: 22px;
 }
 
-.episodes {
+.character_info__episodes {
   display: block;
 }
 
-.episodeTitle {
+.character_info__episode_title {
   font-size: 46px;
   padding-left: 22px;
   margin: 0;
